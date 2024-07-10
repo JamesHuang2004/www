@@ -10,7 +10,8 @@
   <LI><a href="flight_ATL_JFK.jpg" target=_blank> Flight from Atlanda to NYC</a> </LI>
 </AL>
 
-<P><B>May 2024: NYC --> Incheon --> Beijing </B></P> <BR>
+<hr>
+<P>May 2024: NYC --> Incheon --> Beijing </P> 
 <AL>
   <LI><a href="flight_JFK_ICN.jpg" target=_blank>Flight from JFK to ICN </a> </LI>
   <LI><a href="hotel_address.jpg" target=_blank>Ibis Hotel Address</a>  </LI>
