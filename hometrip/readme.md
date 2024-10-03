@@ -1,3 +1,10 @@
+<P> <B> Dec 2024 & Jan 2025 : NYC <--> HK <--> BEIJING </B>
+<AL>
+  <LI><a href="Dec2024_Jan2025.pdf" target=_blank>Trip Details</a></LI>
+</AL>
+  
+</P>
+<hr>
 <P><B>Aug 2024: Beijing --> Incheon --> NYC </B></P>
 <AL>
   <LI><a href="flight_BJ_ICN.png" target=_blank>Aug 30: Flight from Beijing to ICN</a></LI>
