@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graduate application portals</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1d2927;
+      --muted: #596c65;
+      --paper: #f4f2e9;
+      --line: #c9d0c3;
+      --accent: #145844;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(100% - 3rem, 56rem);
+      margin: 0 auto;
+      padding: clamp(3rem, 8vw, 6rem) 0;
+    }
+
+    header {
+      border-top: 4px solid var(--accent);
+      padding: 1.5rem 0 2.5rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: var(--accent);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 13ch;
+      margin: 0;
+      font-family: "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-weight: 400;
+      letter-spacing: -.045em;
+      line-height: 1;
+    }
+
+    .intro {
+      margin: 1.25rem 0 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .list-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: .75rem;
+      color: var(--muted);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    ol {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--line);
+      list-style: none;
+      counter-reset: portals;
+    }
+
+    li {
+      counter-increment: portals;
+      border-bottom: 1px solid var(--line);
+    }
+
+    li a {
+      display: grid;
+      grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 1.15rem .25rem;
+      color: inherit;
+      text-decoration: none;
+      transition: color .15s ease, background-color .15s ease;
+    }
+
+    li a::before {
+      content: counter(portals, decimal-leading-zero);
+      color: var(--muted);
+      font-size: .75rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    li a::after {
+      content: "↗";
+      color: var(--accent);
+      font-size: 1.15rem;
+    }
+
+    li a:hover { background: #e7ece1; color: var(--accent); }
+    li a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    .name { display: block; font-size: 1.05rem; font-weight: 600; }
+    .url { display: block; margin-top: .3rem; color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
+
+    @media (max-width: 480px) {
+      main { width: min(100% - 2rem, 56rem); }
+      li a { grid-template-columns: 1.75rem minmax(0, 1fr) auto; gap: .6rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      li a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Application directory</p>
+      <h1>Graduate application portals.</h1>
+      <p class="intro">A quick reference for application and related portals.</p>
+    </header>
+
+    <section aria-label="Application links">
+      <div class="list-heading"><span>Portal</span><span>23 links</span></div>
+      <ol>
+        <li><a href="https://admissions.scs.cmu.edu/portal/apply_gr"><span><span class="name">Carnegie Mellon SCS</span><span class="url">admissions.scs.cmu.edu/portal/apply_gr</span></span></a></li>
+        <li><a href="https://applygrad.stanford.edu/portal/grad-app"><span><span class="name">Stanford</span><span class="url">applygrad.stanford.edu/portal/grad-app</span></span></a></li>
+        <li><a href="https://apply.mit.edu/apply/frm?02c533de-9974-4530-97b4-aea9f7657445"><span><span class="name">MIT</span><span class="url">apply.mit.edu/apply/frm?02c533de-9974-4530-97b4-aea9f7657445</span></span></a></li>
+        <li><a href="https://gradapp.berkeley.edu/apply/"><span><span class="name">UC Berkeley</span><span class="url">gradapp.berkeley.edu/apply/</span></span></a></li>
+        <li><a href="https://apply.gsas.nyu.edu/apply/"><span><span class="name">NYU GSAS</span><span class="url">apply.gsas.nyu.edu/apply/</span></span></a></li>
+        <li><a href="https://apply.gsas.harvard.edu/apply/frm?dc0731b7-0957-4588-ab1c-193b600a01bc"><span><span class="name">Harvard GSAS</span><span class="url">apply.gsas.harvard.edu/apply/frm?dc0731b7-0957-4588-ab1c-193b600a01bc</span></span></a></li>
+        <li><a href="https://www.applyweb.com/forms/cornellg"><span><span class="name">Cornell</span><span class="url">www.applyweb.com/forms/cornellg</span></span></a></li>
+        <li><a href="https://apply.engineering.columbia.edu/apply/frm?69dc9fa0-73b0-4782-ac6c-fad9e70ec502"><span><span class="name">Columbia Engineering</span><span class="url">apply.engineering.columbia.edu/apply/frm?69dc9fa0-73b0-4782-ac6c-fad9e70ec502</span></span></a></li>
+        <li><a href="https://apply.grad.uw.edu/portal/gr_app"><span><span class="name">University of Washington</span><span class="url">apply.grad.uw.edu/portal/gr_app</span></span></a></li>
+        <li><a href="https://gradadmit.wustl.edu/apply/frm?d59c4be3-099c-4920-b488-5e0143e3ff14"><span><span class="name">Washington University in St. Louis</span><span class="url">gradadmit.wustl.edu/apply/frm?d59c4be3-099c-4920-b488-5e0143e3ff14</span></span></a></li>
+        <li><a href="https://apply.gsas.harvard.edu/apply/ref"><span><span class="name">Harvard GSAS reference portal</span><span class="url">apply.gsas.harvard.edu/apply/ref</span></span></a></li>
+        <li><a href="https://www.applyweb.com/forms/umgrad"><span><span class="name">UM graduate application (ApplyWeb)</span><span class="url">www.applyweb.com/forms/umgrad</span></span></a></li>
+        <li><a href="https://applygp.duke.edu/apply/"><span><span class="name">Duke</span><span class="url">applygp.duke.edu/apply/</span></span></a></li>
+        <li><a href="https://gradadmissions.engineering.upenn.edu/apply/?sr=a5b4dff1-0bba-4e4a-a70b-8b80c7c5cd15"><span><span class="name">Penn Engineering</span><span class="url">gradadmissions.engineering.upenn.edu/apply/?sr=a5b4dff1-0bba-4e4a-a70b-8b80c7c5cd15</span></span></a></li>
+        <li><a href="https://gradapp.gatech.edu/portal/gr-app-manage"><span><span class="name">Georgia Tech</span><span class="url">gradapp.gatech.edu/portal/gr-app-manage</span></span></a></li>
+        <li><a href="https://applygrad.jhu.edu/apply/"><span><span class="name">Johns Hopkins</span><span class="url">applygrad.jhu.edu/apply/</span></span></a></li>
+        <li><a href="https://applycentral.virginia.edu/apply/"><span><span class="name">University of Virginia</span><span class="url">applycentral.virginia.edu/apply/</span></span></a></li>
+        <li><a href="https://apply.grad.ucla.edu/portal/landing"><span><span class="name">UCLA</span><span class="url">apply.grad.ucla.edu/portal/landing</span></span></a></li>
+        <li><a href="https://graduate-apply.princeton.edu/apply/"><span><span class="name">Princeton</span><span class="url">graduate-apply.princeton.edu/apply/</span></span></a></li>
+        <li><a href="https://apply.grad.yale.edu/apply/"><span><span class="name">Yale</span><span class="url">apply.grad.yale.edu/apply/</span></span></a></li>
+        <li><a href="https://students.gradschool.utexas.edu/apply/"><span><span class="name">University of Texas at Austin</span><span class="url">students.gradschool.utexas.edu/apply/</span></span></a></li>
+        <li><a href="https://gradapply.purdue.edu/apply/"><span><span class="name">Purdue</span><span class="url">gradapply.purdue.edu/apply/</span></span></a></li>
+        <li><a href="https://gradadmissions.rice.edu/apply/?sr=7be574d8-9034-411d-8fc8-bff465ba82d7"><span><span class="name">Rice</span><span class="url">gradadmissions.rice.edu/apply/?sr=7be574d8-9034-411d-8fc8-bff465ba82d7</span></span></a></li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
